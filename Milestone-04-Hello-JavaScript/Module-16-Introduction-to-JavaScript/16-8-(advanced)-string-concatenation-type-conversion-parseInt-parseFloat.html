@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>16-8 (advanced) String Concatenation, type conversion parseInt parseFloat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row my-3">
+            <div class="col-md-12 text-center mb-5">
+                <h2>Concatenation, Conversion, ParseInt, ParseFloat </h2>
+            </div>
+            <div class="col-md-4">
+                <ol>
+                    <li>Create concatenation.js file</li>
+                    <li>var price1 = 31; <br> var price2 = 10; <br> var totalPrice = price1 + price2; <br>
+                        console.log(totalPrice); <br> node concatenation.js <br> <strong>Result: 41;</strong></li>
+                    <li>var firstName = 'Jemie'; <br> var lastName = 'Kin'; <br> var fullName = firstName + ' ' +
+                        lastName; <br> console.log(fullName);<br> node concatenation.js <br> <strong>Result:
+                            Jemie Kin;</strong></li>
+                    <li>JavaScript - এ তুমি সংখ্যা একসাথে যোগ করতে পার কিন্তু String শুধু পাশাপাশি জোড়া দেয়া যায়।
+                        [Concatenation]</li>
+                </ol>
+            </div>
+            <div class="col-md-4">
+                <ol>
+                    <li>Create conversion.js file</li>
+                    <li>var price1 = '31'; <br> var price2 = '10'; <br> var totalPrice = price1 + price2; <br>
+                        console.log(totalPrice); <br> node conversion.js <br> <strong>Result: 3110;</strong></li>
+                    <li>Create conversion.js file</li>
+                    <li>var price1 = '31'; <br> var price2 = 10; <br> var totalPrice = price1 + price2; <br>
+                        console.log(totalPrice); <br> node conversion.js <br> <strong>Result: 3110;</strong></li>
+                    <li>var price1 = 31; <br> var price2 = 10; <br> var totalPrice = price1 + price2; <br>
+                        console.log(totalPrice); <br> node conversion.js <br> <strong>Result: 3110;</strong></li>
+                </ol>
+            </div>
+            <div class="col-md-4">
+                <ol>
+                    <li>Convert String to Number <br> var price1 = '32'; <br> var priceNumber = parseInt(price1); <br>
+                        cosole.log(priceNumber); <br> node conversion.js <br>
+                        <strong>Result: 32</strong>
+                    </li>
+                    <li>এখানে, Parse মানে Convert করা এবং Int মানে পূর্ণসংখ্যা</li>
+                    <li>String এর ভিতরে যদি শুধুমাত্র সংখ্যা থাকে তাহলেই সে Convert করে দিবে Number -এ। <br>যেমনঃ price1
+                        =
+                        '32'</li>
+                    <li>Number -এর পরিবর্তে যদি অন্য কিছু থাকে তাহলে সে convert করবে না। যেমনঃ <br> price1 =
+                        'thirty-two'.</li>
+                    <li>var gpa = '3.45'; <br> var gpaNumber = parseInt(gpa); <br> console.log(gpa); <br> node
+                        conversion.js <br><strong>Result: 3</strong></li>
+                    <li>এখানে parseInt শুধুমাত্র পূর্ণসংখ্যা convert করতে পারে কিন্তু দশমিক দারা কোন সংখ্যা convert করতে
+                        হলে সেটা parseFloat দিয়ে করতে হবে। যেমনঃ</li>
+                    <li>var gpa = '3.45'; <br> var gpaNumber = parseFloat(gpa); <br> console.log(gpa); <br> node
+                        conversion.js <br><strong>Result: 3.45</strong></li>
+                    <li>Float মানে দশমিক ওয়ালা কোন সংখ্যা যা দশমিক সহ দেখাবে।</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/16-8/1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/16-8/2.png" class="d-block w-100" alt="...">
+                        </div>
+
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
