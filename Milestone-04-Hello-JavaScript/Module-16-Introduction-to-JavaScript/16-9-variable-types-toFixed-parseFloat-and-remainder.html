@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>16-9 Variable types, toFixed, parseFloat and remainder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row my-3">
+            <div class="col-md-12 text-center mb-5">
+                <h2>Variable types, toFixed, parseFloat & remainder </h2>
+            </div>
+            <div class="col-md-4">
+                <ol>
+                    <li>Create types.js file</li>
+                    <li>var price1 = 100; <br>
+                        console.log(typeOf price1); <br> node types.js <br> <strong>Result: number</strong></li>
+                    <li>var price2 = '100'; <br> console.log(typeOf price2);<br> node types.js <br> <strong>Result:
+                            String</strong></li>
+                    <li>var isHappy = true; <br> console.log(typeOf isHappy);<br> node types.js <br> <strong>Result:
+                            Boolean</strong></li>
+                    <li>var romantic; <br> console.log(typeOf romantic);<br> node types.js <br> <strong>Result:
+                            Undefined</strong></li>
+
+                </ol>
+            </div>
+            <div class="col-md-4">
+                <ol>
+                    <li>Google Search: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures"
+                            target="_blank">JavaScript Data Types</a></li>
+                    <li>
+                        Data Types
+                        <ul>
+                            <li>
+                                Primitive Data Types
+                                <ol>
+                                    <li>Number</li>
+                                    <li>String</li>
+                                    <li>Boolean</li>
+                                    <li>Undefined</li>
+                                    <li>Null</li>
+                                </ol>
+                            </li>
+                            <li>
+                                Non-Primitive Data Types
+                                <ol>
+                                    <li>Object</li>
+                                    <li>Array</li>
+                                    <li>Function</li>
+
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        var num1 = 0.1/0.5; <br> var num2 = 0.2/0.3; <br> var sum = num1+num2; <br> sum = sum.toFixed(4)
+                        <br>
+                        sum = parseFloat(sum)<br>
+                        console.log(sum); <br> node type.js <br> result: 0.3004;
+                    </li>
+                </ol>
+            </div>
+            <div class="col-md-4">
+                <ol>
+                    <li>Create Reminder.js file</li>
+                    <li>var mangoes = 10/7/5; <br> var person = 7/9/2; <br> var reminder = mangoes % person<br>
+                        console.log(reminder)</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/16-9/1.png" class="d-block w-100" alt="...">
+                        </div>
+
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
