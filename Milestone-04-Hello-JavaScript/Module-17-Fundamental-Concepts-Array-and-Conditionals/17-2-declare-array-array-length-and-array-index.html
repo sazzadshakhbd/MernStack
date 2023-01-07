@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>17-2 Declare Array, array length and array index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <h3>Declare Array</h3>
+                <ul class="ps-3">
+                    <li>Create array.js file</li>
+                    <li>Array - মানে হচ্ছে সারি সারি বা একধিক value থাকবে। variable - এর মতই declare করতে হবে তবে শুধু
+                        মান টা declare করার জন্য ৩ টি কাজ করতে হবে।
+                        <ol>
+                            <li>[]</li>
+                            <li>প্রত্যেকটা মানের সাথে gap দিতে হবে যেমনঃ [11 12 13 14]</li>
+                            <li>প্রত্যেকটা মানের মাঝখানে কমা দিতে হবে যেমনঃ [11, 12, 13, 14]</li>
+                        </ol>
+                    </li>
+                    <li>var friendAge = [11, 21, 45, 17, 14, 105, 8] <br /> console.log(friendAge); <br /> node array.js
+                        <br /> Result: [11, 21, 45, 17, 14, 105, 8]
+                    </li>
+                    <li>var picnicFee = [5000, 2000, 4000, 120] <br /> console.log(picnicFee); <br /> node array.js
+                        <br /> Result: [5000, 2000, 4000, 120]
+                    </li>
+                    <li>var fruits = ["mango", "banana", "orange"] <br /> console.log(fruits); <br /> node array.js
+                        <br /> Result: ["mango", "banana", "orange"]
+                    </li>
+                    <li>var vowels = ["a", "e", "i", "o", "u"] <br /> console.log(vowels); <br /> node array.js
+                        <br /> Result: ["a", "e", "i", "o", "u"]
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Array Index</h3>
+                <ul class="ps-3">
+                    <li>এবার আমরা দেখব, Array -এর মধ্যে কয়টা উপাদান আছে। এটা দেখতে হলে আমাদের যা করতে হবে তা হলঃ </li>
+                    <li>var friendAge = [11, 21, 45, 17, 14, 105, 8] <br /> console.log(friendAge.length); <br /> node
+                        array.js
+                        <br /> Result: 7
+                    </li>
+                    <li>var picnicFee = [5000, 2000, 4000, 120] <br /> console.log(picnicFee.length); <br /> node
+                        array.js
+                        <br /> Result: 4
+                    </li>
+                    <li>var fruits = ["mango", "banana", "orange"] <br /> console.log(fruits.length); <br /> node
+                        array.js
+                        <br /> Result: 3
+                    </li>
+                    <li>var vowels = ["a", "e", "i", "o", "u"] <br /> console.log(vowels.length); <br /> node array.js
+                        <br /> Result: 5
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Array Elements Position</h3>
+                <ul class="ps-3">
+                    <li>এবার আমরা দেখব, Array -এর মধ্যে যে কয়টা উপাদান আছে তার অবস্থান । এটা দেখতে হলে আমাদের যা করতে
+                        হবে তা হলঃ </li>
+                    <li>var friendAge = [11, 21, 45, 17, 14, 105, 8] <br /> console.log(friendAge[0]); <br /> node
+                        array.js
+                        <br /> Result: 11
+                    </li>
+                    <li>var picnicFee = [5000, 2000, 4000, 120] <br /> console.log(picnicFee[1]); <br /> node
+                        array.js
+                        <br /> Result: 2000
+                    </li>
+                    <li>var fruits = ["mango", "banana", "orange"] <br /> console.log(fruits[3]); <br /> node
+                        array.js
+                        <br /> Result: undefined
+                    </li>
+                    <li>var vowels = ["a", "e", "i", "o", "u"] <br /> console.log(vowels[3]); <br /> node array.js
+                        <br /> Result: o
+                    </li>
+                    <li><strong>Notes: </strong>Array -এর মধ্যে যখন কোন একাধিক উপাদান থাকে তাদের অবস্থান টা শুরু হয়
+                        সবসময় ০ দিয়ে।</li>
+                    <li>Array এর Index / Array -এর Position</li>
+                    <li><strong>Notes: </strong> আমরা যদি কোন var এর মাধ্যমে Array Declare করি তাহলে যেটা Number দিয়ে
+                        করব সেখানে সব Number থাকতে হবে আর যদি String দিয়ে করি তাহলে সব String থাকবে। Number, Boolean,
+                        String মিলিয়ে declare করা যাবে না। </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
