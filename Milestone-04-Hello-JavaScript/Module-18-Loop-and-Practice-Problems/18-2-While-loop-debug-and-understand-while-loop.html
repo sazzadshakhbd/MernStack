@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>18-2 While loop, debug and understand while loop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <h3>While Loop</h3>
+                <ol class="ps-3">
+                    <li>Create while.js</li>
+                    <li>
+                        <pre>
+if (condition) {
+    // Statement
+}
+</pre>
+                    </li>
+                    <li>
+                        <pre>
+while (expression) {
+    // Statement
+}
+</pre>
+                    </li>
+                    <li><strong>What is Condition?</strong><br> এটি হচ্ছে শুধুমাত্র একটা শর্ত যা প্রতিবার লুপ চলার আগে
+                        একবার করে check করে। <br> লুপ এর condition এর variable এর value অবশ্যই পরিবর্তন করতে হবে অর্থাৎ
+                        বাড়াতে বা কমাতে হবে তা না হলে লুপ আজীবন চলতেই থাকবে। </li>
+                    <li>
+
+                        <pre>
+var roastGiven = 0;
+if(roastGiven > 7) {
+    
+}
+</pre>
+                    <li>
+                        <pre>
+    var roastGiven = 0;
+    while(roastGiven < 7) {
+            console.log('Give me roast please!');
+        // roastGiven = roastGiven + 1;
+        // roastGiven += 1;
+        roastGiven++; 
+    }
+    node while.js
+</pre>
+                    </li>
+
+                    <li>
+                        <pre>
+var roastGiven = 0;
+while(roastGiven < 7) {
+    console.log('Give me roast please!');     
+    console.log(roastGiven);
+        roastGiven++; 
+    }
+</pre>
+                        node.while.js
+                    </li>
+                    <li>
+                        <p class="text-danger">এই সবগুলো উদাহরণ debugging করে দেখানো হয়েছে যা অবশ্যই Practice করতে হবে।
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/18-02/1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/18-02/2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/18-02/3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/18-02/4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/18-02/5.png" class="d-block w-100" alt="...">
+                        </div>
+
+
+
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
