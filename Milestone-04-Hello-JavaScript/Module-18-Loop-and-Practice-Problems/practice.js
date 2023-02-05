@@ -1,5 +1,3 @@
-var number = 201;
-while (number <= 300) {
-    console.log(number);
-    number = number + 2;
+for (var i = 0; i < 20; i += 2) {
+    console.log(i);
 }
