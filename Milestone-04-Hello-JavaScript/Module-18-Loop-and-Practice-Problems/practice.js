@@ -1,3 +1,5 @@
-for (var i = 0; i < 20; i += 2) {
-    console.log(i);
+var items = ['Bottle', 'Mouse', 'Sunglass', 'Pen'];
+for (var i = 0; i < items.length; i++) {
+    var item = items[i];
+    console.log(item);
 }
